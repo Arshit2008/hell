@@ -1,7 +1,7 @@
 n=0
 def func(string):
-    vowel = 'aeiouAEIOU'
-    if string[0] in vowel:
+    word = 'aeiouAEIOU'
+    if string[0] in word:
         global n
         n +=1 
 f = open(r"C:\Users\lenovo 5\Music\OP.txt",'w+')
