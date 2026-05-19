@@ -16,6 +16,9 @@ with open('data.pkl', 'ab') as f:          #we are opening the file in write bin
             break
         print()
 with open('data.pkl', 'rb') as f: #we are opening the file in read binary mode
-    
-    data = pickle.load(f) #we are loading the data from the file
-    print(data) #we are printing the data
+    while True:
+        try:
+            data = pickle.load(f) #we are loading the data from the file
+            print(data) 
+        except EOFError: #we are catching the end of file error
+            break
