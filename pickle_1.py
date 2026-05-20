@@ -1,6 +1,6 @@
 import pickle
 stu={}
-with open('data.pkl', 'ab') as f:          #we are opening the file in write binary mode
+with open('data.pkl', 'wb') as f:          #we are opening the file in write binary mode
     ans = 'y'
     while ans:
         name = input('name: ')
