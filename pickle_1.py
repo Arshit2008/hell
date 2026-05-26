@@ -23,6 +23,7 @@ with open('data.pkl', 'rb') as f: #we are opening the file in read binary mode
         try:
             data = pickle.load(f) #we are loading the data from the file
             print(data) 
-        except EOFError: #we are catching the end of file error
-            print('End of file.')
+        except EOFError: # the end of file error
+            print('End of Program.')
             break
+           
